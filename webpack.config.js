@@ -8,10 +8,14 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
     },
     module: {
-        rule: [
+        rules: [
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader"]
+                use: ["style-loader", "css-loader"],
+            },
+            {
+                test: /\.(jpeg|jpg|png|svg|gif)$/i,
+                type: "asset/resource",
             },
         ],
     }
