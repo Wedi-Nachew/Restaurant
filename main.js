@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector("#content").appendChild(function(){const e=document.createElement("h1");return e.textContent="The Best Restaurant In The Whole Town Of Hawzen To Eat And Hangout",e.classList.add("home"),e}())})();
