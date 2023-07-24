@@ -25,7 +25,7 @@ body{
     padding: 0;
 }
 
-.div{
+.home{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,9 +34,13 @@ body{
     height: 100%;
     color: white;
 }
-.name {
+.container{
     align-self: flex-start;
+    display: flex;
+}
+.name {
     font-family: "norse", cursive;
+    font-size: 2.4rem;
 }
 .home-text{
     font-size: 3.5rem;
