@@ -27,7 +27,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family:"PlayfairDisplay";
+    font-family: "PlayfairDisplay";
     src: url(./fonts/PlayfairDisplay-SemiBold.woff2) format(woff2),
          url(./fonts/PlayfairDisplay-SemiBold.woff) format(woff);
     font-weight: 600;
@@ -40,6 +40,8 @@ body{
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    font-family: "PlayfairDisplay", serif;
+    overflow: hidden;
 }
 
 #content{
@@ -64,23 +66,67 @@ body{
 .container{
     align-self: flex-start;
     display: flex;
-    padding: 10px;
+    padding: 5px 10px;
+    background-color: rgb(0, 0, 0, .6);
+    width: 100%;
 }
 .name {
     font-family: "norse", cursive;
-    font-size: 2.4rem;
+    font-size: 1.9rem;
     margin: 0;
     width: min(11ch);
 }
 .logo{
-    height: 100px;
-    width: 60px;
+    height: 70px;
+    width: 50px;
+    fill: yellow;
 }
 .home-text{
     font-size: 3.5rem;
     text-align: center;
     width: min(20ch);
     margin-bottom: 20%;
+}
+.motto{
+    font-size: 1.2rem;
+}
+
+.nav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    justify-content: space-evenly;
+    height: 82px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    color: rgb(220, 240, 240, .75);
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.order{
+    border: 2px solid #fff;
+    align-self: center;
+    padding: 4px 28px;
+    color: rgb(255, 255, 255);
+    font-size: 20px
+}
+button:hover{
+    color: #fff;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.order:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    border: 2px solid transparent;
 }
 
 
