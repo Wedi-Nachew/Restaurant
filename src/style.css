@@ -37,10 +37,17 @@ body{
 .container{
     align-self: flex-start;
     display: flex;
+    padding: 10px;
 }
 .name {
     font-family: "norse", cursive;
     font-size: 2.4rem;
+    margin: 0;
+    width: min(11ch);
+}
+.logo{
+    height: 100px;
+    width: 60px;
 }
 .home-text{
     font-size: 3.5rem;
@@ -48,4 +55,5 @@ body{
     width: min(20ch);
     margin-bottom: 20%;
 }
+
 
