@@ -1,6 +1,7 @@
 import './style.css'
 import home from "./home.js"
-import background from "./restaurant.jpg"
+import aboutUs from "./about.js"
+
 
 
 const content = document.querySelector("#content")
@@ -24,4 +25,4 @@ nav.appendChild(menuBtn)
 nav.appendChild(aboutBtn)
 nav.appendChild(orderBtn)
 content.appendChild(nav)
-content.appendChild(home())
+content.appendChild(aboutUs())
