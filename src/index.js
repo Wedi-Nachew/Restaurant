@@ -20,10 +20,13 @@ orderBtn.classList.add("order")
 
 nav.addEventListener("click", (event)=>{
     if(event.target.textContent === "Home"){
+        content.removeChild(content.lastChild)
         content.appendChild(home())
     }else if(event.target.textContent === "About Us"){
+        content.removeChild(content.lastChild)
         content.appendChild(aboutUs())
     }else if(event.target.textContent === "Menu"){
+        content.removeChild(content.lastChild)
         content.appendChild(menu())
     }else{
         false
@@ -31,9 +34,13 @@ nav.addEventListener("click", (event)=>{
 })
 
 
+document.addEventListener("DOMContentLoaded", ()=>{
+    content.appendChild(home())
+})
 
 nav.appendChild(homeBtn)
 nav.appendChild(menuBtn)
 nav.appendChild(aboutBtn)
 nav.appendChild(orderBtn)
 content.appendChild(nav)
+
