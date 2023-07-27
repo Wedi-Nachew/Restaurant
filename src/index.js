@@ -45,7 +45,7 @@ nav.addEventListener("click", (event)=>{
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    content.appendChild(home())
+    content.appendChild(menu())
 })
 
 container.appendChild(logo)
