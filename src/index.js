@@ -1,6 +1,7 @@
 import './style.css'
 import home from "./home.js"
 import aboutUs from "./about.js"
+import menu from "./menu.js"
 
 
 const content = document.querySelector("#content")
@@ -35,7 +36,7 @@ nav.addEventListener("click", (event)=>{
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    content.appendChild(home())
+    content.appendChild(menu())
 })
 
 nav.appendChild(homeBtn)

@@ -60,7 +60,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     color: white;
     overflow: hidden;
 }
@@ -162,6 +162,50 @@ button:hover{
     width: 350px;
     border-radius: 10px;
 }
+.menu{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:#fff;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    margin-top: 75px;
+    padding: 0 100px 80px 100px;
+
+}
+.menu > h1{
+    grid-column: span 2;
+    font-size: 4rem;
+    text-align: center;
+    margin-left: 70px;
+}
+.menu > div{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 75px
+}
+.menu div > h1 {
+    grid-column: span 2;
+}
+.menu img{
+    height: 250px;
+    width: auto;
+    border-radius: 15px;
+}
+.menu div:nth-child(4) img,
+.menu div:nth-child(5) img{
+    margin-right: 40px;
+}
+.menu > div > div{
+    width: min(20ch);
+    font-size: 1.2rem;
+    line-height: 32px;
+    margin-top: 25px;
+
+}
+
 
 
 
