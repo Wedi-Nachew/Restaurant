@@ -3,7 +3,7 @@ import home from "./home.js"
 import aboutUs from "./about.js"
 import menu from "./menu.js"
 import odin from "./odin.svg"
-// import container  from 'webpack'
+
 
 
 const content = document.querySelector("#content")
@@ -16,6 +16,9 @@ const logo = document.createElement("img")
 const name = document.createElement("h1")
 const container = document.createElement("div")
 
+homeBtn.classList.add("btn")
+aboutBtn.classList.add("btn")
+menuBtn.classList.add("btn")
 nav.classList.add("nav")
 
 name.textContent = "ODIN Restaurant"
@@ -27,25 +30,39 @@ menuBtn.textContent = "Menu"
 aboutBtn.textContent = "About Us"
 orderBtn.textContent = "Delivery"
 orderBtn.classList.add("order")
-
+const buttons = document.querySelectorAll('.btn')
 nav.addEventListener("click", (event)=>{
-    if(event.target.textContent === "Home"){
-        content.removeChild(content.lastChild)
-        content.appendChild(home())
-    }else if(event.target.textContent === "About Us"){
-        content.removeChild(content.lastChild)
-        content.appendChild(aboutUs())
-    }else if(event.target.textContent === "Menu"){
-        content.removeChild(content.lastChild)
-        content.appendChild(menu())
-    }else{
-        false
+    nav.childNodes.forEach(btn => {
+        btn.classList.remove("focus")
+   })
+
+    switch(event.target.textContent){
+        case "Home":
+            content.removeChild(content.lastChild)
+            content.appendChild(home())
+            event.target.classList.add("focus")
+            break
+        case "About Us":
+            content.removeChild(content.lastChild)
+            content.appendChild(aboutUs())
+            event.target.classList.add("focus")
+            break;
+        case "Menu":
+            content.removeChild(content.lastChild)
+            content.appendChild(menu())
+            event.target.classList.add("focus")
+            break
+        default:
+            break
     }
 })
 
+function removeFocus(event){
+    event.target.childNodes.forEach(btn => btn.classList.remove("focus"))
+}
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    content.appendChild(menu())
+    content.appendChild(home())
 })
 
 container.appendChild(logo)

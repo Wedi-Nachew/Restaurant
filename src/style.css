@@ -130,6 +130,10 @@ button:hover{
     color: #fff;
     font-weight: 500;
 }
+.focus{
+    color: #fff;
+    font-weight: 500;
+}
 .order:hover{
     background-color: rgb(255, 255, 255);
     color: #000;
@@ -209,8 +213,9 @@ button:hover{
     width: min(20ch);
     font-size: 1.2rem;
     line-height: 32px;
-
 }
+
+
 
 
 
